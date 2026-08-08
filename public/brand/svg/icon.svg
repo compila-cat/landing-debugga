@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" width="180.70343" height="180.70343" viewBox="0 0 180.70343 180.70343" version="1.1" id="svg634">
+  <title id="title574">Compila — Solucions Tecnològiques</title>
+  <desc id="desc576">Logo vectorial editable. Wordmark: Comfortaa; subtítol: Clear Sans / DejaVu Sans fallback. Fons transparent.</desc>
+  <defs id="defs600">
+    <linearGradient id="r1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff171f" id="stop578" />
+      <stop offset="1" stop-color="#e10712" id="stop580" />
+    </linearGradient>
+    <linearGradient id="r2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ec1019" id="stop583" />
+      <stop offset="1" stop-color="#bd0008" id="stop585" />
+    </linearGradient>
+    <linearGradient id="r3" x1="294" y1="0" x2="358" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d90a13" id="stop588" />
+      <stop offset="1" stop-color="#a50006" id="stop590" />
+    </linearGradient>
+    <linearGradient id="r4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c90810" id="stop593" />
+      <stop offset="1" stop-color="#930005" id="stop595" />
+    </linearGradient>
+    <linearGradient xlink:href="#r1" id="linearGradient857" x1="138" y1="0" x2="202" y2="64" gradientUnits="userSpaceOnUse" />
+    <linearGradient xlink:href="#r2" id="linearGradient859" x1="216" y1="0" x2="280" y2="64" gradientUnits="userSpaceOnUse" />
+    <linearGradient xlink:href="#r4" id="linearGradient861" x1="372" y1="0" x2="436" y2="64" gradientUnits="userSpaceOnUse" />
+    <linearGradient xlink:href="#r1" id="linearGradient863" x1="60" y1="78" x2="124" y2="142" gradientUnits="userSpaceOnUse" />
+    <linearGradient xlink:href="#r1" id="linearGradient865" x1="138" y1="78" x2="202" y2="142" gradientUnits="userSpaceOnUse" />
+    <linearGradient xlink:href="#r1" id="linearGradient867" x1="60" y1="156" x2="124" y2="220" gradientUnits="userSpaceOnUse" />
+    <linearGradient xlink:href="#r2" id="linearGradient869" x1="138" y1="156" x2="202" y2="220" gradientUnits="userSpaceOnUse" />
+    <linearGradient xlink:href="#r1" id="linearGradient871" x1="60" y1="234" x2="124" y2="298" gradientUnits="userSpaceOnUse" />
+    <linearGradient xlink:href="#r2" id="linearGradient873" x1="138" y1="234" x2="202" y2="298" gradientUnits="userSpaceOnUse" />
+    <linearGradient xlink:href="#r1" id="linearGradient875" x1="138" y1="312" x2="202" y2="376" gradientUnits="userSpaceOnUse" />
+    <linearGradient xlink:href="#r1" id="linearGradient877" x1="216" y1="312" x2="280" y2="376" gradientUnits="userSpaceOnUse" />
+    <linearGradient xlink:href="#r2" id="linearGradient879" x1="294" y1="312" x2="358" y2="376" gradientUnits="userSpaceOnUse" />
+    <linearGradient xlink:href="#r4" id="linearGradient881" x1="372" y1="312" x2="436" y2="376" gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g id="logo" transform="translate(-11.86991,-17.042656)">
+    
+    <g id="pixel-c" transform="matrix(0.48059422,0,0,0.48059422,-16.965743,17.042656)">
+      
+      <path id="rect602" style="fill:url(#linearGradient857)" d="m 147,0 h 46 c 4.986,0 9,4.014 9,9 v 46 c 0,4.986 -4.014,9 -9,9 h -46 c -4.986,0 -9,-4.014 -9,-9 V 9 c 0,-4.986 4.014,-9 9,-9 z" />
+      <path id="rect604" style="fill:url(#linearGradient859)" d="m 225,0 h 46 c 4.986,0 9,4.014 9,9 v 46 c 0,4.986 -4.014,9 -9,9 h -46 c -4.986,0 -9,-4.014 -9,-9 V 9 c 0,-4.986 4.014,-9 9,-9 z" />
+      <path id="rect606" style="fill:url(#r3)" d="m 303,0 h 46 c 4.986,0 9,4.014 9,9 v 46 c 0,4.986 -4.014,9 -9,9 h -46 c -4.986,0 -9,-4.014 -9,-9 V 9 c 0,-4.986 4.014,-9 9,-9 z" />
+      <path id="rect608" style="fill:url(#linearGradient861)" d="m 381,0 h 46 c 4.986,0 9,4.014 9,9 v 46 c 0,4.986 -4.014,9 -9,9 h -46 c -4.986,0 -9,-4.014 -9,-9 V 9 c 0,-4.986 4.014,-9 9,-9 z" />
+      
+      <path id="rect610" style="fill:url(#linearGradient863)" d="m 69,78 h 46 c 4.986,0 9,4.014 9,9 v 46 c 0,4.986 -4.014,9 -9,9 H 69 c -4.986,0 -9,-4.014 -9,-9 V 87 c 0,-4.986 4.014,-9 9,-9 z" />
+      <path id="rect612" style="fill:url(#linearGradient865)" d="m 147,78 h 46 c 4.986,0 9,4.014 9,9 v 46 c 0,4.986 -4.014,9 -9,9 h -46 c -4.986,0 -9,-4.014 -9,-9 V 87 c 0,-4.986 4.014,-9 9,-9 z" />
+      <path id="rect614" style="fill:url(#linearGradient867)" d="m 69,156 h 46 c 4.986,0 9,4.014 9,9 v 46 c 0,4.986 -4.014,9 -9,9 H 69 c -4.986,0 -9,-4.014 -9,-9 v -46 c 0,-4.986 4.014,-9 9,-9 z" />
+      <path id="rect616" style="display:inline;fill:url(#linearGradient869)" d="m 147,156 h 46 c 4.986,0 9,4.014 9,9 v 46 c 0,4.986 -4.014,9 -9,9 h -46 c -4.986,0 -9,-4.014 -9,-9 v -46 c 0,-4.986 4.014,-9 9,-9 z" />
+      <path id="rect618" style="fill:url(#linearGradient871)" d="m 69,234 h 46 c 4.986,0 9,4.014 9,9 v 46 c 0,4.986 -4.014,9 -9,9 H 69 c -4.986,0 -9,-4.014 -9,-9 v -46 c 0,-4.986 4.014,-9 9,-9 z" />
+      <path id="rect620" style="fill:url(#linearGradient873)" d="m 147,234 h 46 c 4.986,0 9,4.014 9,9 v 46 c 0,4.986 -4.014,9 -9,9 h -46 c -4.986,0 -9,-4.014 -9,-9 v -46 c 0,-4.986 4.014,-9 9,-9 z" />
+      
+      <path id="rect622" style="fill:url(#linearGradient875)" d="m 147,312 h 46 c 4.986,0 9,4.014 9,9 v 46 c 0,4.986 -4.014,9 -9,9 h -46 c -4.986,0 -9,-4.014 -9,-9 v -46 c 0,-4.986 4.014,-9 9,-9 z" />
+      <path id="rect624" style="fill:url(#linearGradient877)" d="m 225,312 h 46 c 4.986,0 9,4.014 9,9 v 46 c 0,4.986 -4.014,9 -9,9 h -46 c -4.986,0 -9,-4.014 -9,-9 v -46 c 0,-4.986 4.014,-9 9,-9 z" />
+      <path id="rect626" style="fill:url(#linearGradient879)" d="m 303,312 h 46 c 4.986,0 9,4.014 9,9 v 46 c 0,4.986 -4.014,9 -9,9 h -46 c -4.986,0 -9,-4.014 -9,-9 v -46 c 0,-4.986 4.014,-9 9,-9 z" />
+      <path id="rect628" style="fill:url(#linearGradient881)" d="m 381,312 h 46 c 4.986,0 9,4.014 9,9 v 46 c 0,4.986 -4.014,9 -9,9 h -46 c -4.986,0 -9,-4.014 -9,-9 v -46 c 0,-4.986 4.014,-9 9,-9 z" />
+    </g>
+  </g>
+  <metadata id="metadata883">
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:title>Compila — Solucions Tecnològiques</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>
