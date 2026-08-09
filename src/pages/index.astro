@@ -16,126 +16,125 @@ import {
 } from "@lucide/astro";
 import "../styles/global.css";
 
-const rotatingWords = ["assequible", "proper", "obert", "just", "segur", "sostenible"];
+const rotatingWords = ["accessibile", "chiaro", "aperto", "sicuro", "sostenibile", "su misura"];
 const pixelColumns = 30;
 const pixelRows = 12;
-const cOrigin = { col: 11, row: 2 };
+const markOrigin = { col: 12, row: 3 };
 const isLitPixel = (index: number) => {
-  const row = Math.floor(index / pixelColumns) - cOrigin.row;
-  const col = (index % pixelColumns) - cOrigin.col;
+  const row = Math.floor(index / pixelColumns) - markOrigin.row;
+  const col = (index % pixelColumns) - markOrigin.col;
 
   return (
-    (row === 0 && col >= 2 && col <= 7) ||
-    (row === 1 && col >= 1 && col <= 2) ||
-    (row >= 2 && row <= 5 && col >= 0 && col <= 1) ||
-    (row === 6 && col >= 1 && col <= 2) ||
-    (row === 7 && col >= 2 && col <= 7)
+    (row === 0 && col >= 0 && col <= 3) ||
+    (row >= 1 && row <= 3 && col >= 0 && col <= 1) ||
+    (row >= 1 && row <= 3 && col === 4) ||
+    (row === 4 && col >= 0 && col <= 3)
   );
 };
 
 const services = [
   {
     icon: Globe,
-    title: "Pàgines web",
-    text: "Webs clares, ràpides i mantenibles per explicar el projecte i posar-lo en marxa sense dependència innecessària.",
+    title: "Siti web",
+    text: "Siti chiari, veloci e manutenibili per presentare il progetto e metterlo online senza dipendenze inutili.",
   },
   {
     icon: PanelsTopLeft,
-    title: "Aplicatius interns",
-    text: "Eines a mida per ordenar processos, dades i tasques que avui depenen de fulls de càlcul o solucions improvisades.",
+    title: "Applicazioni interne",
+    text: "Strumenti su misura per ordinare processi, dati e attività che oggi dipendono da fogli di calcolo o soluzioni improvvisate.",
   },
   {
     icon: Workflow,
-    title: "Automatitzacions",
-    text: "Fluxos que estalvien feina repetitiva i connecten les eines que ja feu servir.",
+    title: "Automazioni",
+    text: "Flussi che riducono il lavoro ripetitivo e collegano gli strumenti che il team usa già ogni giorno.",
   },
   {
     icon: Cable,
-    title: "Integracions",
-    text: "Connexions entre serveis, APIs i sistemes existents per reduir passos manuals i errors.",
+    title: "Integrazioni",
+    text: "Connessioni tra servizi, API e sistemi esistenti per ridurre passaggi manuali, attese ed errori.",
   },
   {
     icon: Wrench,
-    title: "Manteniment i evolució",
-    text: "Evolució tècnica amb criteri: actualitzacions, correccions i millores sense convertir-ho en una quota opaca.",
+    title: "Manutenzione ed evoluzione",
+    text: "Evoluzione tecnica con criterio: aggiornamenti, correzioni e miglioramenti senza trasformarli in un costo opaco.",
   },
   {
     icon: MessagesSquare,
-    title: "Consultoria tècnica",
-    text: "Acompanyament per prendre decisions tècniques, triar eines i evitar bloquejos amb proveïdors o plataformes.",
+    title: "Consulenza tecnica",
+    text: "Affiancamento per prendere decisioni tecniche, scegliere strumenti ed evitare blocchi con fornitori o piattaforme.",
   },
 ];
 
 const values = [
   {
     icon: Scale,
-    title: "Transparència",
-    text: "Pressupostos entenedors, prioritats clares i decisions tècniques explicades abans de construir.",
+    title: "Trasparenza",
+    text: "Preventivi comprensibili, priorità chiare e decisioni tecniche spiegate prima di costruire.",
   },
   {
     icon: Blocks,
-    title: "Programari lliure",
-    text: "Prioritzem eines obertes quan encaixen. El codi que fem es pot entregar al client i, si l'acord ho permet, publicar per a la comunitat.",
+    title: "Software libero",
+    text: "Preferiamo strumenti aperti quando sono adatti. Il codice può essere consegnato al cliente e, quando l'accordo lo permette, pubblicato per la comunità.",
   },
   {
     icon: Handshake,
-    title: "Proximitat",
-    text: "Tracte directe amb qui construeix la solució, sense capes comercials que compliquin el projecte.",
+    title: "Collaborazione diretta",
+    text: "Dialogo con chi costruisce la soluzione, senza livelli commerciali che complicano il progetto.",
   },
   {
     icon: BadgeCheck,
-    title: "Qualitat sostenible",
-    text: "Preferim solucions petites, sòlides i evolutives abans que grans promeses difícils de mantenir.",
+    title: "Qualità sostenibile",
+    text: "Preferiamo soluzioni piccole, solide ed evolutive rispetto a grandi promesse difficili da mantenere.",
   },
 ];
 ---
 
 <!doctype html>
-<html lang="ca">
+<html lang="it">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Compila - Programari a mida assequible</title>
+    <title>Debugga - Soluzioni tecnologiche accessibili</title>
     <meta
       name="description"
-      content="Compila crea pàgines web, aplicatius interns, automatitzacions, integracions i consultoria amb programari assequible, obert i proper."
+      content="Debugga crea siti web, applicazioni interne, automazioni, integrazioni e consulenza tecnica con software accessibile, aperto e sostenibile."
     />
     <meta name="theme-color" content="#e4151b" />
-    <link rel="canonical" href="https://compila.cat/" />
+    <link rel="canonical" href="https://debugga.it/" />
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" href="/brand/svg/icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/brand/png/icon-180.png" />
     <meta property="og:type" content="website" />
-    <meta property="og:locale" content="ca_ES" />
-    <meta property="og:url" content="https://compila.cat/" />
-    <meta property="og:site_name" content="Compila" />
-    <meta property="og:title" content="Compila - Programari a mida assequible" />
+    <meta property="og:locale" content="it_IT" />
+    <meta property="og:url" content="https://debugga.it/" />
+    <meta property="og:site_name" content="Debugga" />
+    <meta property="og:title" content="Debugga - Soluzioni tecnologiche accessibili" />
     <meta
       property="og:description"
-      content="Solucions de software properes, obertes i pensades per ser sostenibles."
+      content="Soluzioni software vicine, aperte e progettate per restare sostenibili."
     />
-    <meta property="og:image" content="https://compila.cat/brand/png/logo-1280.png" />
+    <meta property="og:image" content="https://debugga.it/brand/png/logo-1280.png" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Compila - Programari a mida assequible" />
+    <meta name="twitter:title" content="Debugga - Soluzioni tecnologiche accessibili" />
     <meta
       name="twitter:description"
-      content="Solucions de software properes, obertes i pensades per ser sostenibles."
+      content="Soluzioni software vicine, aperte e progettate per restare sostenibili."
     />
-    <meta name="twitter:image" content="https://compila.cat/brand/png/logo-1280.png" />
+    <meta name="twitter:image" content="https://debugga.it/brand/png/logo-1280.png" />
   </head>
   <body>
     <header class="site-header">
-      <a class="brand-link" href="/" aria-label="Compila">
-        <img src="/brand/svg/logo.svg" alt="Compila, Solucions Tecnològiques" width="1110" height="188" />
+      <a class="brand-link" href="/" aria-label="Debugga">
+        <img src="/brand/svg/logo.svg" alt="Debugga, Soluzioni tecnologiche" width="1158" height="217" />
       </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Obrir menú">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Apri menu">
         <Menu class="nav-icon-open" size={24} strokeWidth={2.2} aria-hidden="true" />
         <X class="nav-icon-close" size={24} strokeWidth={2.2} aria-hidden="true" />
       </button>
-      <nav id="site-nav" class="site-nav" aria-label="Navegació principal">
-        <a href="#serveis">Què fem</a>
-        <a href="#valors">Valors</a>
-        <a href="#contacte">Contacte</a>
+      <nav id="site-nav" class="site-nav" aria-label="Navigazione principale">
+        <a href="#servizi">Cosa facciamo</a>
+        <a href="#valori">Valori</a>
+        <a href="#contatti">Contatti</a>
       </nav>
     </header>
 
@@ -148,34 +147,28 @@ const values = [
         </div>
         <div class="hero-copy">
           <h1 id="hero-title">
-            <span class="hero-title-static">El programari a mida pot ser</span>
-            <span class="rotating-word" data-words={JSON.stringify(rotatingWords)}>assequible</span>
+            <span class="hero-title-static">Il software su misura può essere</span>
+            <span class="rotating-word" data-words={JSON.stringify(rotatingWords)}>accessibile</span>
           </h1>
           <p class="hero-text">
-            Duem a terme projectes com a nosaltres ens agradaria que ens els portéssin: amb transparència, qualitat, i seguretat.
+            Realizziamo progetti come vorremmo riceverli noi: con trasparenza, qualità e attenzione alla manutenzione.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="#contacte">
-              <svg aria-hidden="true" viewBox="0 0 24 24">
-                <path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z" />
-                <path d="m22 7-8.97 5.7a2 2 0 0 1-2.06 0L2 7" />
-              </svg>
-              Contacta amb nosaltres
+            <a class="button primary" href="#contatti">
+              <Mail size={20} strokeWidth={2.1} aria-hidden="true" />
+              Contattaci
             </a>
-            <a class="button secondary" href="https://github.com/compila-cat" rel="noreferrer" target="_blank">
-              <svg aria-hidden="true" viewBox="0 0 24 24">
-                <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
-                <path d="M9 18c-4.51 2-5-2-7-2" />
-              </svg>
-              Visita'ns a GitHub
+            <a class="button secondary" href="mailto:info@debugga.it">
+              <MessagesSquare size={20} strokeWidth={2.1} aria-hidden="true" />
+              info@debugga.it
             </a>
           </div>
         </div>
       </section>
 
-      <section id="serveis" class="section services-section" aria-labelledby="services-title">
+      <section id="servizi" class="section services-section" aria-labelledby="services-title">
         <div class="section-heading">
-          <h2 id="services-title">Programari útil, fet a la mida real del projecte.</h2>
+          <h2 id="services-title">Software utile, costruito sulla dimensione reale del progetto.</h2>
         </div>
         <div class="service-grid">
           {services.map((service) => {
@@ -198,36 +191,36 @@ const values = [
 
       <section class="section work-section" aria-labelledby="work-title">
         <div class="section-heading">
-          <h2 id="work-title">Primer entendre, després construir.</h2>
+          <h2 id="work-title">Prima capire, poi costruire.</h2>
         </div>
         <div class="work-layout">
           <p class="lead">
-            Abans de proposar tecnologia, mirem quin problema cal resoldre, quina part té més impacte i com
-            es pot mantenir sense que el cost creixi sense control.
+            Prima di proporre tecnologia, capiamo quale problema va risolto, quale parte ha più impatto e come
+            mantenerla senza far crescere i costi senza controllo.
           </p>
           <ol class="work-steps">
             <li>
               <span>01</span>
-              <strong>Concretem l'abast</strong>
-              Definim una primera versió útil, amb prioritats i pressupost entenedor.
+              <strong>Definiamo l'ambito</strong>
+              Disegniamo una prima versione utile, con priorità e budget comprensibili.
             </li>
             <li>
               <span>02</span>
-              <strong>Construïm amb visibilitat</strong>
-              Compartim avenços, decisions i limitacions mentre el projecte pren forma.
+              <strong>Costruiamo con visibilità</strong>
+              Condividiamo avanzamenti, decisioni e limiti mentre il progetto prende forma.
             </li>
             <li>
               <span>03</span>
-              <strong>Deixem marge per evolucionar</strong>
-              Documentem, entreguem accés al codi quan toca i pensem en el manteniment des del principi.
+              <strong>Lasciamo spazio all'evoluzione</strong>
+              Documentiamo, consegniamo l'accesso al codice quando serve e pensiamo alla manutenzione fin dall'inizio.
             </li>
           </ol>
         </div>
       </section>
 
-      <section id="valors" class="section values-section" aria-labelledby="values-title">
+      <section id="valori" class="section values-section" aria-labelledby="values-title">
         <div class="section-heading">
-          <h2 id="values-title">Tecnologia oberta, clara i amb responsabilitat.</h2>
+          <h2 id="values-title">Tecnologia aperta, chiara e responsabile.</h2>
         </div>
         <div class="value-grid">
           {values.map((value) => {
@@ -249,55 +242,48 @@ const values = [
       <!--
       <section class="section proof-section" aria-labelledby="proof-title">
         <div>
-          <h2 id="proof-title">Hem treballat en webs, eines internes i aplicatius tipus SaaS.</h2>
+          <h2 id="proof-title">Abbiamo lavorato su siti, strumenti interni e applicazioni SaaS.</h2>
         </div>
         <p>
-          Alguns projectes són solucions a mida per clients concrets; altres exploren camins que poden acabar
-          sent programari lliure. Preferim explicar cada cas quan toca i amb el context complet.
+          Alcuni progetti sono soluzioni su misura per clienti specifici; altri esplorano strade che possono diventare
+          software libero. Preferiamo raccontare ogni caso al momento giusto e con il contesto completo.
         </p>
       </section>
       -->
 
-      <section id="contacte" class="section contact-section" aria-labelledby="contact-title">
+      <section id="contatti" class="section contact-section" aria-labelledby="contact-title">
         <div class="contact-copy">
-          <h2 id="contact-title">Contacta amb nosaltres</h2>
+          <h2 id="contact-title">Parliamone.</h2>
           <p>
-            Tens una idea o un problema que demana programari? <br/> Escriu-nos i en parlem amb calma.
+            Hai un'idea o un problema che richiede software? <br/> Scrivici e lo valutiamo con calma.
           </p>
         </div>
-        <div class="contact-grid" aria-label="Canals de contacte">
-          <a class="contact-card" href="https://github.com/compila-cat" rel="noreferrer" target="_blank" aria-label="GitHub de Compila">
+        <div class="contact-grid" aria-label="Canali di contatto">
+          <a class="contact-card" href="mailto:info@debugga.it?subject=Nuovo%20progetto" aria-label="Scrivere a Debugga per un nuovo progetto">
             <span class="contact-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24">
-                <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
-                <path d="M9 18c-4.51 2-5-2-7-2" />
-              </svg>
+              <MessagesSquare size={34} strokeWidth={2.1} />
             </span>
-            <span class="contact-user">compila-cat</span>
+            <span class="contact-user">Nuovo progetto</span>
           </a>
-          <a class="contact-card contact-card-main" href="mailto:info@compila.cat" aria-label="Enviar correu a info@compila.cat">
+          <a class="contact-card contact-card-main" href="mailto:info@debugga.it" aria-label="Inviare una email a info@debugga.it">
             <span class="contact-icon" aria-hidden="true">
               <Mail size={34} strokeWidth={2.1} />
             </span>
-            <span class="contact-user">info@compila.cat</span>
+            <span class="contact-user">info@debugga.it</span>
           </a>
-          <a class="contact-card" href="https://www.linkedin.com/company/compila-cat/" rel="noreferrer" target="_blank" aria-label="LinkedIn de Compila">
+          <a class="contact-card" href="mailto:info@debugga.it?subject=Consulenza%20tecnica" aria-label="Scrivere a Debugga per una consulenza tecnica">
             <span class="contact-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24">
-                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6Z" />
-                <path d="M2 9h4v12H2z" />
-                <circle cx="4" cy="4" r="2" />
-              </svg>
+              <Handshake size={34} strokeWidth={2.1} />
             </span>
-            <span class="contact-user">Compila</span>
+            <span class="contact-user">Consulenza</span>
           </a>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <span>Compila, Solucions Tecnològiques SL</span>
-      <a href="mailto:info@compila.cat">info@compila.cat</a>
+      <span>Debugga - Soluzioni tecnologiche</span>
+      <a href="mailto:info@debugga.it">info@debugga.it</a>
     </footer>
 
     <script>
@@ -324,7 +310,7 @@ const values = [
       if (navToggle && nav) {
         const closeNav = () => {
           navToggle.setAttribute("aria-expanded", "false");
-          navToggle.setAttribute("aria-label", "Obrir menú");
+          navToggle.setAttribute("aria-label", "Apri menu");
           nav.classList.remove("is-open");
         };
 
@@ -332,7 +318,7 @@ const values = [
           const isOpen = navToggle.getAttribute("aria-expanded") === "true";
 
           navToggle.setAttribute("aria-expanded", String(!isOpen));
-          navToggle.setAttribute("aria-label", isOpen ? "Obrir menú" : "Tancar menú");
+          navToggle.setAttribute("aria-label", isOpen ? "Apri menu" : "Chiudi menu");
           nav.classList.toggle("is-open", !isOpen);
         });
 

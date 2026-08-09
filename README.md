@@ -1,8 +1,8 @@
-# Compila Landing
+# Debugga Landing
 
-Landing estàtica per a `compila.cat`, feta amb Astro.
+Landing statica per `debugga.it`, realizzata con Astro.
 
-## Desenvolupament
+## Sviluppo
 
 ```sh
 npm install
@@ -16,8 +16,8 @@ npm run build
 npm run preview
 ```
 
-El build final es genera a `dist/`.
+Il build finale viene generato in `dist/`.
 
-## Desplegament
+## Deploy
 
-El workflow de GitHub Actions publica `dist/` a GitHub Pages quan hi ha push a `main`.
+Il workflow di GitHub Actions pubblica `dist/` su GitHub Pages quando c'è un push su `main`.
