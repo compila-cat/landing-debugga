@@ -16,7 +16,7 @@ import {
 } from "@lucide/astro";
 import "../styles/global.css";
 
-const rotatingWords = ["accessibile", "chiaro", "aperto", "sicuro", "sostenibile", "su misura"];
+const rotatingWords = ["accessibile", "chiaro", "aperto", "sicuro", "sostenibile"];
 const pixelColumns = 30;
 const pixelRows = 12;
 const markOrigin = { col: 12, row: 3 };
@@ -158,10 +158,6 @@ const values = [
               <Mail size={20} strokeWidth={2.1} aria-hidden="true" />
               Contattaci
             </a>
-            <a class="button secondary" href="mailto:info@debugga.it">
-              <MessagesSquare size={20} strokeWidth={2.1} aria-hidden="true" />
-              info@debugga.it
-            </a>
           </div>
         </div>
       </section>
@@ -259,24 +255,14 @@ const values = [
           </p>
         </div>
         <div class="contact-grid" aria-label="Canali di contatto">
-          <a class="contact-card" href="mailto:info@debugga.it?subject=Nuovo%20progetto" aria-label="Scrivere a Debugga per un nuovo progetto">
-            <span class="contact-icon" aria-hidden="true">
-              <MessagesSquare size={34} strokeWidth={2.1} />
-            </span>
-            <span class="contact-user">Nuovo progetto</span>
-          </a>
+          <!-- GitHub contact card hidden for now. -->
           <a class="contact-card contact-card-main" href="mailto:info@debugga.it" aria-label="Inviare una email a info@debugga.it">
             <span class="contact-icon" aria-hidden="true">
               <Mail size={34} strokeWidth={2.1} />
             </span>
             <span class="contact-user">info@debugga.it</span>
           </a>
-          <a class="contact-card" href="mailto:info@debugga.it?subject=Consulenza%20tecnica" aria-label="Scrivere a Debugga per una consulenza tecnica">
-            <span class="contact-icon" aria-hidden="true">
-              <Handshake size={34} strokeWidth={2.1} />
-            </span>
-            <span class="contact-user">Consulenza</span>
-          </a>
+          <!-- LinkedIn contact card hidden for now. -->
         </div>
       </section>
     </main>
